@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Rob Scanlon', 'Reece Adamson', 'Chase Zhou']
   spec.email         = ['rscanlon@mitre.org']
 
-  spec.summary       = %q{Inferno Smart Launch}
-  spec.description   = %q{Inferno Smart Launch}
+  spec.summary       = %q{Inferno Program Edition}
+  spec.description   = %q{Inferno Program Edition}
   spec.homepage      = 'https://github.com/siteadmin/inferno'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
