@@ -24,11 +24,11 @@ property :introspect_refresh_token, String
 DataMapper.auto_upgrade!
 
 
-Inferno::Models::TestingInstance.send("include", InstanceExtension)
 Inferno::Sequence::SequenceBase.send("include", SequenceExtension)
 
 Inferno::Sequence.load_sequences(__dir__)
 Inferno::Module.load_modules(__dir__)
 
+Inferno::App::Endpoint::Landing.send("set", :modules, ['onc', 'smart', 'argonaut'])
 
 Rack::Handler::Thin.run Inferno::App.new
